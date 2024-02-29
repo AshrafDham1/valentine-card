@@ -1,0 +1,92 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f4d58d;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+main{
+    width: 100dvw;
+    height: 100dvh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container{
+    width: 100dvw;
+    height: 100dvh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.heart{
+    position: relative;
+    width: 150px;
+    height:150px;
+    background-color: #D24545;
+    transform: rotate(45deg);
+    z-index: 2;
+    box-shadow: -10px 10px 90px #D24545;
+    animation: heartScale 0.6s linear infinite ;
+}
+.heart:before{
+    content: "";
+    width: 100%;
+    height: 60%;
+    background-color: #D24545;
+    z-index: 1;
+    position: absolute;
+    top:-59%;
+    border-radius: 75px 75px 0 0;
+    box-shadow: 10px 10px 90px #D24545;
+
+}
+.heart::after{
+    content: "";
+    width: 60%;
+    height:100%;
+    background-color:#D24545;
+    z-index: 1;
+    position: absolute;
+    right:99%;
+    border-radius: 0 75px 75px  0;
+    transform: rotate(180deg);
+    box-shadow: -10px -10px 90px#D24545;
+
+}
+@keyframes heartScale{
+    0%{transform: rotate(45deg) scale(1.1);}
+    25%{transform: rotate(45deg) scale(1);}
+    75%{transform: rotate(45deg) scale(1.1);}
+    100%{transform: rotate(45deg) scale(1);}
+}
+.page2P{
+    font-size: 30px;
+    font-family: "Protest Riot", sans-serif;
+    font-weight: 400;
+    position: absolute;
+    margin-bottom: 30%;
+}
+
+#lbtn {
+ position: relative;
+  background: #D24545;
+  border-radius: 999px;
+  box-shadow: #D24545 0 10px 20px -10px;
+  color: #FFFFFF;
+  font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  opacity: 1;
+  outline: 0 solid transparent;
+  padding: 8px 18px;
+  user-select: none;
+  width: fit-content;
+  word-break: break-word;
+  border: 0;
+  margin-bottom: 50px;
+}
