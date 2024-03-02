@@ -1,0 +1,213 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #D24545;
+    font-family: sans-serif;
+    box-sizing:border-box;
+}
+main{
+    width: 100dvw;
+    height: 100dvh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#section1{ 
+    background-color: #D24545;
+    margin: 0;
+    width: 100dvw;
+    height: 100dvh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 2;
+}
+#question{
+    font-size: 30px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: -50px;
+    color: #f4d58d;
+    font-style: italic;
+    text-align: center;
+}
+#yesBtn {
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 100px;
+  background-color: #19af32;
+  background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  border: 0;
+}
+#noBtn{
+    position: relative;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 100px;
+    background-color: #d90429;
+    background-image: radial-gradient(93% 87% at 87% 89%, rgba(0, 0, 0, 0.23) 0%, transparent 86.18%), radial-gradient(66% 87% at 26% 20%, rgba(255, 255, 255, 0.41) 0%, rgba(255, 255, 255, 0) 69.79%, rgba(255, 255, 255, 0) 100%);
+    box-shadow: 2px 19px 31px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    border: 0;
+  }
+   
+#section2{
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4d58d;
+    position: absolute;
+    z-index: 1; 
+}
+
+#section1 {
+    transition: transform 0.5s ease-in-out; 
+}
+.changePage {
+    transform:  rotateY(90deg); /
+}
+
+.right-angle-triangle1 {
+    width: 0;
+    height: 0;
+    border-top: 300px solid transparent; 
+    border-left: 480px solid #a4161a;
+    position: absolute;
+    z-index: 2; 
+}
+.right-angle-triangle2 {
+    width: 0;
+    height: 0;
+    border-top: 300px solid transparent; 
+    border-right: 480px solid #ba181b;
+    position: absolute; 
+    z-index: 3; 
+    padding-top: -30px;
+
+}
+
+.square {
+    width: 0;
+    height: 0;
+    border-top: 300px solid #e5383b; 
+    border-right: 480px solid #e5383b;
+    position: absolute; 
+    z-index: 1; 
+}
+.oppening {
+    width: 0;
+    height: 0;
+    border-top: 340px solid #e5383b; 
+    border-right: 340px solid #e5383b;
+    position: absolute; 
+    z-index: 1; 
+    transform: rotate(45deg);
+    top:67px;
+    border-radius: 30px 0;
+}
+.letter{
+   position: absolute;
+    width: 340px;
+    height: 250px;
+    background-color:beige;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.letter::before{
+    position: absolute;
+    content: "";
+    border: 2px solid black;
+    border-style: dashed;
+    width: 320px;
+    height: 230px;
+    top: 9px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+}
+
+
+.page1P{
+    font-family: "Protest Riot", sans-serif;
+    font-size: 16px; 
+    line-height: 1.1; 
+    color: #333; 
+    padding: 10px;
+    text-align: center;
+}
+.translateY{
+    transform: translateY(-195px);
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    background-color:beige;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.translateY::before{
+    position: absolute;
+    content: "";
+    border: 2px solid black;
+    border-style: dashed;
+    width: 320px;
+    height: 230px;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+}
+.retranslateY::before{
+    position: absolute;
+    content: "";
+    border: 2px solid black;
+    border-style: dashed;
+    width: 320px;
+    height: 230px;
+    top: 10px;
+    bottom: 10px;
+    right: 10px;
+    left: 10px;
+}
+.retranslateY{
+    position: absolute;
+    width: 340px;
+    height: 250px;
+    background-color:beige;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+#lbtn {
+    position: relative;
+    padding: 17px 40px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #e5383b;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    margin-left: 25%;
+    font-family: "Protest Riot", sans-serif;
+
+  }
